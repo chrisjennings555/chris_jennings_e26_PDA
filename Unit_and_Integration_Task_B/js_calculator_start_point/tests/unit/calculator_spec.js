@@ -13,14 +13,14 @@ describe('calculator', function () {
 
   it('should add one number to another', function() {
     calculator.previousTotal = 4;
-    const sum = calculator.add(1);
+    calculator.add(1);
     const actual = calculator.runningTotal;
     assert.strictEqual(actual, 5);
   });
 
   it('should take one number from another', function() {
     calculator.previousTotal = 7;
-    const sum = calculator.subtract(4);
+    calculator.subtract(4);
     const actual = calculator.runningTotal;
     assert.strictEqual(actual, 3);
   });
