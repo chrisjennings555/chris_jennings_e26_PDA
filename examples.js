@@ -1,7 +1,11 @@
 
 
-const myArray = ['apple', 'pear', 'banana', 'orange'];
+const teams = ['arsenal', 'man city', 'liverpool', 'tottenham'];
 
-myArray.sort();
+const sortedTeams = () => {
+  return teams.sort();
+}
 
-console.log(myArray);
+const topOfTheLeague = sortedTeams()[0];
+
+console.log(topOfTheLeague);
